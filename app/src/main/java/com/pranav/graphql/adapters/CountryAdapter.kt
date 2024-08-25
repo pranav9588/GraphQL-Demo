@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.pranav.GetCountriesQuery
 import com.pranav.graphql.databinding.CountryListCardBinding
 
-class CountryAdapter constructor(private val list: List<GetCountriesQuery.Country>) :
+class CountryAdapter(private val list: List<GetCountriesQuery.Country>) :
     RecyclerView.Adapter<CountryAdapter.ViewHolder>() {
 
     inner class ViewHolder(private val binding: CountryListCardBinding) :

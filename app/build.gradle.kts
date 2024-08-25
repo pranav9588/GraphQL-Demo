@@ -53,15 +53,13 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.apollo.runtime)
-    implementation(libs.apollo.normalized.cache.sqlite)
-    implementation(libs.apollo.api)
-    implementation (libs.retrofit)
-    implementation (libs.converter.gson)
-    implementation (libs.okhttp)
-    implementation (libs.logging.interceptor)
-    implementation (libs.hilt.android)
-    kapt (libs.hilt.compiler)
-    implementation (libs.androidx.fragment.ktx)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+    implementation(libs.androidx.fragment.ktx)
 }
 apollo {
     service("service") {
